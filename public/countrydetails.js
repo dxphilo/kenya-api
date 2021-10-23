@@ -1,4 +1,4 @@
-const Data={
+const countryData={
     "Country": "Republic of Kenya - Jamhuri ya Kenya",
     "Capital":"Nairobi",
     "Currency":"Kenyan shilling (KES)",
@@ -33,4 +33,4 @@ const Data={
     ]
 }
 
-module.exports=Data
+module.exports=countryData
