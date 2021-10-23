@@ -18,6 +18,11 @@ API documenting all the information about country Kenya
 
 ## Getting Started
 
+
+### Getting Data
+
+To get data from this API, you need to perform a GET request to `https://kenyaapi.herokuapp.com` url.
+
 ```bash
 
 
