@@ -1,0 +1,17 @@
+{
+  "name": "kenya-api",
+  "version": "1.0.0",
+  "description": "API documenting all the information about country Kenya",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kenya-api"
+  ],
+  "author": "John Philip",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
