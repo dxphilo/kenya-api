@@ -15,7 +15,8 @@ const counties=[
       'Bamburicement',
       'Pwani oil',
       'Kapa oil refineries ltd',
-      'wood carving','textile',
+      'wood carving',
+      'textile',
       'Food processing',
       'packaging and export'
     ]

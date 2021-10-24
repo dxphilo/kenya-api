@@ -6,11 +6,11 @@ const Data=require('../public/countrydetails');
 const countiesData=require('../public/counties');
 // getting county details
 app.get('/', (req, res) => {
-  res.status(200).send(Data);
+  res.status(200).json(Data);
 });
 // county details
 app.get('/counties', (req, res) => {
-  res.status(200).send(countiesData);
+  res.status(200).json(countiesData);
 });
 
 app.listen(port, () => {
