@@ -5,7 +5,6 @@ const countryData={
     "Size": "580,367 square kilometres",
     "No_of_counties":"47",
     "Cities":["Nairobi", "Kisumu", "Mombasa"],
-    "Tribes":"",
     "Region":"Eastern Africa",
     "Official_languages":["English","Swahili"],
     "National_language":"Swahili",
@@ -31,6 +30,7 @@ const countryData={
     "Counties":[
         "Mombasa","Kwale","Kilifi","Tana River","Lamu","Taita/Taveta","Garissa","Wajir","Mandera","Marsabit","Isiolo","Meru","Tharaka-Nithi","Embu","Kitui","Machakos","Makueni","Nyandarua","Nyeri","Kirinyaga","Murang'a","Kiambu","Turkana","West Pokot","Samburu","Trans Nzoia","Uasin Gishu","Elgeyo/Marakwet","Nandi","Baringo","Laikipia","Nakuru","Narok","Kajiado","Kericho","Bomet","Kakamega","Vihiga","Bungoma","Busia","Siaya","Kisumu","Homa Bay","Migori","Kisii","Nyamira","Nairobi City"
     ],
+    "Tribes":["Ameru","Embu","Kalenjin","Kamba","Kikuyu","Kisii","Kuria","Luo","Luhya","Maasai","Mijikenda","Orma","Rendille","Samburu","Somali","Suba","Swahili","Taita","Taveta","Turkana","Gabra","Mbeere","Nubi","Tharaka","Ilchamus","Njemps","Borana","Galla","Gosha","Konso","Sakuye","Waat","Isaak","Walwana","Dasenach","Galjeel","Leysan","Bulji","Teso","Kenyan Arab","Kenyan Asian","Kenyan European","Kenyan American"],
     'postal_codes':[
         {
           "county_code": 1,
