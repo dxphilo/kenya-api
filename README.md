@@ -26,9 +26,11 @@ To get general information from this API, you need to perform a GET request to `
 #### Using Axios
 
 ```js
+
 import axios from 'axios';
+
 const res = await axios.get(`https://kenyaapi.herokuapp.com`);
-// log out the data from the endpoint
+ // log the data to the console
 console.log(res)
 
 ```
@@ -36,13 +38,15 @@ console.log(res)
 #### Using Fetch API
 
 ```js
+
 fetch('https://kenyaapi.herokuapp.com')
+
     .then(response => response.json())
+    
     .then(data =>
     // log the data to the console
     console.log(data)
-   );
-}
+    );
 
 ```
 
