@@ -21,7 +21,7 @@ API documenting all the information about country Kenya
 
 ### General country information
 
-To get general information from this API, you need to perform a GET request to `https://kenyaapi.herokuapp.com` url.
+To get general information from this API, you need to perform a GET request to `https://kenyaapi.herokuapp.com` endpoint.
 
 #### Using Axios
 
@@ -42,13 +42,45 @@ console.log(res)
 fetch('https://kenyaapi.herokuapp.com')
 
     .then(response => response.json())
-    
+
     .then(data =>
     // log the data to the console
     console.log(data)
     );
 
 ```
+
+### General Data about the 47 counties
+
+To get information about the 47 counties of kenya, you need to perform a GET request to `https://kenyaapi.herokuapp.com/counties` endpoint.
+
+#### Using Axios
+
+```js
+
+import axios from 'axios';
+
+const res = await axios.get(`https://kenyaapi.herokuapp.com/counties`);
+ // log the data to the console
+console.log(res)
+
+```
+
+#### Using Fetch API
+
+```js
+
+fetch('https://kenyaapi.herokuapp.com/counties')
+
+    .then(response => response.json())
+
+    .then(data =>
+    // log the data to the console
+    console.log(data)
+    );
+
+```
+
 
 ```bash
 
