@@ -2,7 +2,23 @@ const counties=[
     {
       "code": 1,
       "name": "Mombasa",
-      "capital": "Mombasa (City)"
+      "capital": "Mombasa (City)",
+      "contact":'esupport@mombasa.go.ke',
+      "website":'https://eservices.mombasa.go.ke/site/',
+      "location":"Coastal Kenya",
+      "border":['Kilifi','Kwale','Indian ocean'],
+      "area":"219 km2",
+      "Population":"939,370",
+      "Mining":['Chrome ore','Cement','Salt','Sand'],
+      "Agriculture":['Sisal','Sugarcane','Cashewnuts','Livestock','Fishing'],
+      "Industries":[
+      'Bamburicement',
+      'Pwani oil',
+      'Kapa oil refineries ltd',
+      'wood carving','textile',
+      'Food processing',
+      'packaging and export'
+    ]
     },
     {
       "code": 2,
