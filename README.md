@@ -11,7 +11,7 @@ API documenting all the information about country Kenya
 
 ## Features
 
-- Get general infomation about kenya,its people, government, geographical sites e.t.c
+- Get general infomation about kenya,its people, government, institutions, health, culture, energy, finance, infrastructure, geographical sites e.t.c
 - Get information about the 47 counties from population, industries, area, tribes, postal_codes e.t.c
 
 ## Authors
