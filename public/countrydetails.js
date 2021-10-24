@@ -2954,8 +2954,7 @@ const countryData={
           "code": 292,
           "name": "Prisons"
         }
-      ],
-      ""
+      ]
 }
 
 module.exports=countryData
