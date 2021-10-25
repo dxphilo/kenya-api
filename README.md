@@ -86,6 +86,38 @@ fetch('https://kenyaapi.herokuapp.com/counties')
 
 ```
 
+### General Data about Wards/Contituencies
+
+To get information about all the Wards/Contituencies, you need to perform a GET request to `https://kenyaapi.herokuapp.com/wards` endpoint.
+
+#### Using Axios
+
+```js
+
+import axios from 'axios';
+
+const res = await axios.get(`https://kenyaapi.herokuapp.com/wards`);
+ // log the data to the console
+console.log(res)
+
+```
+
+#### Using Fetch API
+
+```js
+
+fetch('https://kenyaapi.herokuapp.com/wards')
+
+    .then(response => response.json())
+
+    .then(data =>
+    // log the data to the console
+    console.log(data)
+    );
+
+```
+
+
 ## Authors
 
 - [John Philip](https://www.github.com/developerphilo)
