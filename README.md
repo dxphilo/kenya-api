@@ -116,6 +116,36 @@ fetch('https://kenyaapi.herokuapp.com/wards')
     );
 
 ```
+### General Data about postalcodes
+
+To get information about all the postalcodes, you need to perform a GET request to `https://kenyaapi.herokuapp.com/postalcodes` endpoint.
+
+#### Using Axios
+
+```js
+
+import axios from 'axios';
+
+const res = await axios.get(`https://kenyaapi.herokuapp.com/postalcodes`);
+ // log the data to the console
+console.log(res)
+
+```
+
+#### Using Fetch API
+
+```js
+
+fetch('https://kenyaapi.herokuapp.com/postalcodes')
+
+    .then(response => response.json())
+
+    .then(data =>
+    // log the data to the console
+    console.log(data)
+    );
+
+```
 
 
 ## Authors
