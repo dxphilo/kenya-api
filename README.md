@@ -14,11 +14,6 @@ RESTFul API documenting all the information about country Kenya
 - Get general infomation about kenya,its people, government, institutions, health, culture, energy, finance, infrastructure, geographical sites e.t.c
 - Get information about the 47 counties from population, industries, area, tribes, postal_codes e.t.c
 
-## Authors
-
-- [John Philip](https://www.github.com/developerphilo)
-
-
 
 #### Built with
 
@@ -90,6 +85,12 @@ fetch('https://kenyaapi.herokuapp.com/counties')
     );
 
 ```
+
+## Authors
+
+- [John Philip](https://www.github.com/developerphilo)
+
+
 
 ## Contributing
 
