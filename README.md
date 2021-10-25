@@ -2,7 +2,7 @@
 
 <h1>Kenya API</h1>
 
-REST API documenting all the information about country Kenya
+RESTFul API documenting all the information about country Kenya
 
 </div>
 
