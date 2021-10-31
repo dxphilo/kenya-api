@@ -34,7 +34,7 @@ To get general information from this API, you need to perform a GET request to `
 
 import axios from 'axios';
 
-const res = await axios.get(`https://kenyaapi.herokuapp.com`);
+const res = axios.get(`https://kenyaapi.herokuapp.com`);
  // log the data to the console
 console.log(res)
 
