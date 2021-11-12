@@ -13,20 +13,20 @@ app.use(cors({
 }));
 
 // country endpoint
-app.get('/', (req, res) => {
+app.get('/v1/', (req, res) => {
   res.status(200).json(Data);
 });
 // counties endopint
-app.get('/counties', (req, res) => {
+app.get('/v1/counties', (req, res) => {
   res.status(200).json(countiesData);
 });
 
 // wards endpoint
-app.get('/wards', (req, res) => {
+app.get('/v1/wards', (req, res) => {
   res.status(200).json(Wards);
 });
 // postal_codes endpoint
-app.get('/postalcodes', (req, res) => {
+app.get('/v1/postalcodes', (req, res) => {
   res.status(200).json(postalCodes);
 });
 app.listen(port, () => {
