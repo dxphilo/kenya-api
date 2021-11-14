@@ -34,7 +34,7 @@ To get general information from this API, you need to perform a GET request to `
 
 import axios from 'axios';
 
-const res = axios.get(`https://kenyaapi.herokuapp.com`);
+const res = axios.get(`https://kenyaapi.herokuapp.com/v1`);
  // log the data to the console
 console.log(res)
 
@@ -44,7 +44,7 @@ console.log(res)
 
 ```js
 
-fetch('https://kenyaapi.herokuapp.com')
+fetch('https://kenyaapi.herokuapp.com/v1')
 
     .then(response => response.json())
 
@@ -65,7 +65,7 @@ To get information about the 47 counties of kenya, you need to perform a GET req
 
 import axios from 'axios';
 
-const res = await axios.get(`https://kenyaapi.herokuapp.com/counties`);
+const res = await axios.get(`https://kenyaapi.herokuapp.com/v1/counties`);
  // log the data to the console
 console.log(res)
 
@@ -75,7 +75,7 @@ console.log(res)
 
 ```js
 
-fetch('https://kenyaapi.herokuapp.com/counties')
+fetch('https://kenyaapi.herokuapp.com/v1/counties')
 
     .then(response => response.json())
 
@@ -96,7 +96,7 @@ To get information about all the Wards/Contituencies, you need to perform a GET 
 
 import axios from 'axios';
 
-const res = await axios.get(`https://kenyaapi.herokuapp.com/wards`);
+const res = await axios.get(`https://kenyaapi.herokuapp.com/v1/wards`);
  // log the data to the console
 console.log(res)
 
@@ -106,7 +106,7 @@ console.log(res)
 
 ```js
 
-fetch('https://kenyaapi.herokuapp.com/wards')
+fetch('https://kenyaapi.herokuapp.com/v1/wards')
 
     .then(response => response.json())
 
@@ -126,7 +126,7 @@ To get information about all the postalcodes, you need to perform a GET request 
 
 import axios from 'axios';
 
-const res = await axios.get(`https://kenyaapi.herokuapp.com/postalcodes`);
+const res = await axios.get(`https://kenyaapi.herokuapp.com/v1/postalcodes`);
  // log the data to the console
 console.log(res)
 
@@ -136,7 +136,7 @@ console.log(res)
 
 ```js
 
-fetch('https://kenyaapi.herokuapp.com/postalcodes')
+fetch('https://kenyaapi.herokuapp.com/v1/postalcodes')
 
     .then(response => response.json())
 
