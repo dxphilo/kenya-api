@@ -3,32 +3,19 @@ const app = express();
 const cors = require('cors');
 const port = process.env.PORT || 3000;
 
-const Data=require('../public/countrydetails');
-const countiesData=require('../public/counties');
-const Wards=require('../public/wards');
-const postalCodes=require('../public/postalcodes');
+const approutes=require('../routes/routes');
+
 
 app.use(cors({
   origin: '*'
 }));
 
+app.use('/',approutes);
 // country endpoint
-app.get('/v1/', (req, res) => {
-  res.status(200).json(Data);
-});
-// counties endopint
-app.get('/v1/counties', (req, res) => {
-  res.status(200).json(countiesData);
+app.get('/', (req, res) => {
+  res.status(200).send("<div><h2>Welcome to Kenya-APi</h2><p>This API documents info about beautiful country Kenya</p></div>");
 });
 
-// wards endpoint
-app.get('/v1/wards', (req, res) => {
-  res.status(200).json(Wards);
-});
-// postal_codes endpoint
-app.get('/v1/postalcodes', (req, res) => {
-  res.status(200).json(postalCodes);
-});
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
