@@ -26,7 +26,7 @@ RESTFul API documenting all the information about country Kenya
 
 ### General country information
 
-To get general information from this API, you need to perform a GET request to `https://kenyaapi.herokuapp.com` endpoint.
+To get general information from this API, you need to perform a GET request to `https://kenyaapi.herokuapp.com/v1` endpoint.
 
 #### Using Axios
 
@@ -57,7 +57,7 @@ fetch('https://kenyaapi.herokuapp.com/v1')
 
 ### General Data about the 47 counties
 
-To get information about the 47 counties of kenya, you need to perform a GET request to `https://kenyaapi.herokuapp.com/counties` endpoint.
+To get information about the 47 counties of kenya, you need to perform a GET request to `https://kenyaapi.herokuapp.com/v1/counties` endpoint.
 
 #### Using Axios
 
@@ -88,7 +88,7 @@ fetch('https://kenyaapi.herokuapp.com/v1/counties')
 
 ### General Data about Wards/Contituencies
 
-To get information about all the Wards/Contituencies, you need to perform a GET request to `https://kenyaapi.herokuapp.com/wards` endpoint.
+To get information about all the Wards/Contituencies, you need to perform a GET request to `https://kenyaapi.herokuapp.com/v1/wards` endpoint.
 
 #### Using Axios
 
@@ -118,7 +118,7 @@ fetch('https://kenyaapi.herokuapp.com/v1/wards')
 ```
 ### General Data about postalcodes
 
-To get information about all the postalcodes, you need to perform a GET request to `https://kenyaapi.herokuapp.com/postalcodes` endpoint.
+To get information about all the postalcodes, you need to perform a GET request to `https://kenyaapi.herokuapp.com/v1/postalcodes` endpoint.
 
 #### Using Axios
 
