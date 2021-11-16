@@ -45,9 +45,7 @@ console.log(res)
 ```js
 
 fetch('https://kenyaapi.herokuapp.com/v1')
-
     .then(response => response.json())
-
     .then(data =>
     // log the data to the console
     console.log(data)
@@ -76,9 +74,7 @@ console.log(res)
 ```js
 
 fetch('https://kenyaapi.herokuapp.com/v1/counties')
-
     .then(response => response.json())
-
     .then(data =>
     // log the data to the console
     console.log(data)
@@ -107,9 +103,7 @@ console.log(res)
 ```js
 
 fetch('https://kenyaapi.herokuapp.com/v1/wards')
-
     .then(response => response.json())
-
     .then(data =>
     // log the data to the console
     console.log(data)
@@ -137,9 +131,7 @@ console.log(res)
 ```js
 
 fetch('https://kenyaapi.herokuapp.com/v1/postalcodes')
-
     .then(response => response.json())
-
     .then(data =>
     // log the data to the console
     console.log(data)
