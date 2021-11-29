@@ -24,6 +24,9 @@ RESTFul API documenting all the information about country Kenya
 
 ## Getting Started
 
+### Home
+
+To access the home page, [Visit](https://kenyaapi.herokuapp.com/)
 
 ### General country information
 
