@@ -1,4 +1,4 @@
-const postalCodes=[
+[
     {
       "code": "40101",
       "office": "Ahero"
@@ -2520,5 +2520,3 @@ const postalCodes=[
       "office": "Zombe"
     }
   ]
-
-module.exports=postalCodes

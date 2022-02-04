@@ -1,0 +1,6 @@
+{
+    "watch": ["dist"],
+    "ext": "js",
+    "exec": "yarn start",
+    "delay": 1
+}
