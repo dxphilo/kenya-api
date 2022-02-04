@@ -25,7 +25,7 @@ RESTFul API documenting all the information about country Kenya
 
 To access the home page, [Visit](https://kenyaapi.herokuapp.com/)
 
-### Kenya API Routes
+### API Routes
 
 List of all the available kenya-api base routes.
 
@@ -52,19 +52,16 @@ Please adhere to this project's `code of conduct`.
 
 ```bash
 
-
 # install dependencies
 
 $ yarn install
-
 
 # serve with hot reload at localhost:3000
 
 $ yarn start
 
-
 ```
 
-Your application will be served on port [3000](http://localhost:3000)by default, you can change that by modifying the .env file.
+Your application will be served on port [3000](http://localhost:3000) by default, you can change that by modifying the .env file.
 
 For detailed explanation on how things work, check out [Expresssjs](https://expressjs.com/en/starter/hello-world.html).
