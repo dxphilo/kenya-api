@@ -2,10 +2,11 @@
     "name": "kenya-api",
     "version": "1.0.0",
     "description": "API documenting information about country Kenya",
-    "main": "src/index.js",
+    "main": "src/server.ts",
+    "type": "module",
     "scripts": {
         "build": "yarn tsc",
-        "start": "yarn node src/index.js",
+        "start": "yarn tsc && yarn node ./dist/server.js",
         "dev": "yarn run build && yarn run concurrently \"yarn run build -w\" \"yarn nodemon\"",
         "lint": "yarn eslint '*/**/*.ts' -c .eslintrc.js --ignore-path .eslintignore"
     },
