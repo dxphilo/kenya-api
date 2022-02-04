@@ -2,13 +2,15 @@
     "name": "kenya-api",
     "version": "1.0.0",
     "description": "API documenting information about country Kenya",
+    "repository": "https://github.com/developerphilo/kenya-api.git",
     "main": "src/server.ts",
-    "type": "module",
     "scripts": {
         "build": "yarn tsc",
         "start": "yarn tsc && yarn node ./dist/server.js",
         "dev": "yarn run build && yarn run concurrently \"yarn run build -w\" \"yarn nodemon\"",
-        "lint": "yarn eslint '*/**/*.ts' -c .eslintrc.js --ignore-path .eslintignore"
+        "lint": "yarn eslint '*/**/*.ts' -c .eslintrc.js --ignore-path .eslintignore",
+        "postinstall": "tsc",
+        "deploy": "git add . && git commit -m Heroku && git push heroku master"
     },
     "keywords": [
         "kenya-api"
@@ -39,6 +41,5 @@
     },
     "engines": {
         "node": ">=14.5.0"
-    },
-    "repository": "https://github.com/developerphilo/kenya-api.git"
+    }
 }
