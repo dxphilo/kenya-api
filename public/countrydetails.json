@@ -1,4 +1,4 @@
-const countryData={
+{
     "Country": "Republic of Kenya - Jamhuri ya Kenya",
     "Capital":"Nairobi",
     "Currency":"Kenyan shilling (KES)",
@@ -31,7 +31,7 @@ const countryData={
         "Mombasa","Kwale","Kilifi","Tana River","Lamu","Taita/Taveta","Garissa","Wajir","Mandera","Marsabit","Isiolo","Meru","Tharaka-Nithi","Embu","Kitui","Machakos","Makueni","Nyandarua","Nyeri","Kirinyaga","Murang'a","Kiambu","Turkana","West Pokot","Samburu","Trans Nzoia","Uasin Gishu","Elgeyo/Marakwet","Nandi","Baringo","Laikipia","Nakuru","Narok","Kajiado","Kericho","Bomet","Kakamega","Vihiga","Bungoma","Busia","Siaya","Kisumu","Homa Bay","Migori","Kisii","Nyamira","Nairobi City"
     ],
     "Tribes":["Ameru","Embu","Kalenjin","Kamba","Kikuyu","Kisii","Kuria","Luo","Luhya","Maasai","Mijikenda","Orma","Rendille","Samburu","Somali","Suba","Swahili","Taita","Taveta","Turkana","Gabra","Mbeere","Nubi","Tharaka","Ilchamus","Njemps","Borana","Galla","Gosha","Konso","Sakuye","Waat","Isaak","Walwana","Dasenach","Galjeel","Leysan","Bulji","Teso","Kenyan Arab","Kenyan Asian","Kenyan European","Kenyan American"],
-    'postal_codes':[
+    "postal_codes":[
         {
           "county_code": 1,
           "code": 1,
@@ -2956,5 +2956,3 @@ const countryData={
         }
       ]
 }
-
-module.exports=countryData

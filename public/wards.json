@@ -1,4 +1,4 @@
-const Wards=[
+[
     {
       "county_code": 1,
       "code": 1,
@@ -1460,5 +1460,3 @@ const Wards=[
       "name": "Prisons"
     }
   ]
-
-module.exports=Wards
