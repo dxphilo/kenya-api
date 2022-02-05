@@ -1,42 +1,42 @@
 [
     {
-        "Country": "Republic of Kenya - Jamhuri ya Kenya",
-        "Capital": "Nairobi",
-        "Currency": "Kenyan shilling (KES)",
-        "Size": "580,367 square kilometres",
-        "No_of_counties": "47",
-        "Cities": ["Nairobi", "Kisumu", "Mombasa"],
-        "Region": "Eastern Africa",
-        "Official_languages": ["English", "Swahili"],
-        "National_language": "Swahili",
-        "Motto": "Harambee",
-        "Flag": "https://cdn.britannica.com/15/15-050-B075588A/Flag-Kenya.jpg",
-        "Demonym": "Kenyan",
-        "Independence": "12 December 1963",
-        "Rebublic": "12 December 1964",
-        "Population": "47.6 million",
-        "Water": "2.3 %",
+        "country": "Republic of Kenya - Jamhuri ya Kenya",
+        "capital": "Nairobi",
+        "currency": "Kenyan shilling (KES)",
+        "size": "580,367 square kilometres",
+        "no-of-counties": "47",
+        "cities": ["Nairobi", "Kisumu", "Mombasa"],
+        "region": "Eastern Africa",
+        "official_languages": ["English", "Swahili"],
+        "national_language": "Swahili",
+        "motto": "Harambee",
+        "flag": "https://cdn.britannica.com/15/15-050-B075588A/Flag-Kenya.jpg",
+        "demonym": "Kenyan",
+        "independence": "12 December 1963",
+        "rebublic": "12 December 1964",
+        "population": "47.6 million",
+        "water": "2.3 %",
         "GDP": "250.854 billio",
-        "Time_Zone": "UTC + 3 (EAT)",
-        "Driving_side": "left",
-        "Caling_code": "+254",
+        "time_Zone": "UTC + 3 (EAT)",
+        "driving_side": "left",
+        "caling_code": "+254",
         "ISO_3166_code": "KE",
-        "Internet_TLD": ".ke",
-        "Presidents": [
+        "internet_TLD": ".ke",
+        "presidents": [
             "Uhuru Kenyatta",
             "Mwai Kibaki",
             "Daniel Arap Moi",
             "Jomo Kenyatta"
         ],
         "president_image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Uhuru_Kenyatta.png",
-        "Religions": [
+        "teligions": [
             "Christianity",
             "Protestantism",
             "Catholicism",
             "Islam",
             "Traditional Faiths"
         ],
-        "Towns": [
+        "towns": [
             "Nairobi City",
             "Baringo",
             "Bomet",
@@ -85,7 +85,7 @@
             "Wajir",
             "West Pokot"
         ],
-        "Counties": [
+        "counties": [
             "Mombasa",
             "Kwale",
             "Kilifi",
@@ -134,7 +134,7 @@
             "Nyamira",
             "Nairobi City"
         ],
-        "Tribes": [
+        "tribes": [
             "Ameru",
             "Embu",
             "Kalenjin",
