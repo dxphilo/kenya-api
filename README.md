@@ -32,7 +32,7 @@ List of all the available kenya-api base routes.
 -   `/country`
 -   `/county`
 -   `/wards`
--   `/postalcodes`
+-   `/postcodes`
 
 ## Authors
 
