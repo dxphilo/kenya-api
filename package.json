@@ -10,7 +10,7 @@
         "dev": "yarn run build && yarn run concurrently \"yarn run build -w\" \"yarn nodemon\"",
         "lint": "yarn eslint '*/**/*.ts' -c .eslintrc.js --ignore-path .eslintignore",
         "postinstall": "tsc",
-        "deploy": "git add . && git commit -m Heroku && git push heroku master"
+        "deploy": "git push heroku master"
     },
     "keywords": [
         "kenya-api"
