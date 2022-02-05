@@ -29,7 +29,7 @@ app.use(compression());
 app.use(bodyParser());
 
 // Controllers
-app.use(helloWorld);
+app.use('/', helloWorld);
 app.use('/county', countyController);
 app.use('/country', countryController);
 app.use('/wards', wardsController);
