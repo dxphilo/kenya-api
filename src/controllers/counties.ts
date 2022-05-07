@@ -4,7 +4,7 @@ import * as county from '../public/counties.json';
 const router = Router();
 
 function countyData(req: Request, res: Response) {
-    res.send(county);
+    res.json(county);
 }
 
 // Routes
