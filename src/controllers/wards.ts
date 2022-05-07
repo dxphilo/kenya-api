@@ -4,7 +4,7 @@ import * as wards from '../public/wards.json';
 const router = Router();
 
 function wardsData(req: Request, res: Response) {
-    res.send(wards);
+    res.status(201).json({ wards, status: 201 });
 }
 
 // Routes
