@@ -4,7 +4,7 @@ const router = Router();
 
 function helloWorld(req: Request, res: Response) {
     res.json({
-        data: 'Welcome to Kenya-API - This API documents info about beautiful country Kenya'
+        Data: 'Welcome to Kenya-API - API documenting information about beautiful country Kenya'
     });
 }
 

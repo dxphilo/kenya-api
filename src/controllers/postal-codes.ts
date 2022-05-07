@@ -4,7 +4,7 @@ import * as postalCode from '../public/postalcodes.json';
 const router = Router();
 
 function postalData(req: Request, res: Response) {
-    res.send(postalCode);
+    res.status(201).json({ postalCode, status: 201 });
 }
 
 // Routes
