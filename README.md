@@ -23,7 +23,7 @@ RESTFul API documenting all the information about country Kenya
 
 ### Home
 
-To access the home page, [Visit](https://kenyaapi.herokuapp.com/)
+To access the base url, [Visit](https://kenya-api.onrender.com)
 
 ### API Routes
 
