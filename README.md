@@ -10,33 +10,33 @@ RESTFul API documenting all the information about country Kenya
 
 ## Features
 
--   Get general infomation about kenya,its people, government, institutions, health, culture, energy, finance, infrastructure, geographical sites e.t.c
+- Get general information about Kenya, its people, government, institutions, health, culture, energy, finance, infrastructure, geographical sites, etc.
 
--   Get information about the 47 counties from population, industries, area, tribes, postal_codes e.t.c
+- Get information about the 47 counties, including population, industries, area, tribes, postal codes, etc.
 
 #### Built with
 
-    - Nodejs
-    - Expressjs
+- Node.js
+- Express.js
 
 ## Getting Started
 
 ### Home
 
-To access the base url, [Visit](https://kenya-api.onrender.com)
+To access the base URL, [Visit](https://kenya-api.onrender.com)
 
 ### API Routes
 
 List of all the available kenya-api base routes.
 
--   `/country`
--   `/county`
--   `/wards`
--   `/postcodes`
+- `/country`
+- `/county`
+- `/wards`
+- `/postcodes`
 
 ## Authors
 
--   [John Philip](https://www.github.com/developerphilo)
+- [John Philip](https://www.github.com/developerphilo)
 
 ## Contributing
 
@@ -62,6 +62,6 @@ $ yarn start
 
 ```
 
-Your application will be served on port [3000](http://localhost:3000) by default, you can change that by modifying the .env file.
+Your application will be served on port [3000](http://localhost:3000/) by default, you can change that by modifying the .env file.
 
-For detailed explanation on how things work, check out [Expresssjs](https://expressjs.com/en/starter/hello-world.html).
+For a detailed explanation of how things work, check out [Express.js](https://expressjs.com/en/starter/hello-world.html).
