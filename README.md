@@ -34,22 +34,6 @@ List of all the available kenya-api base routes.
 - `/wards`
 - `/postcodes`
 
-## Authors
-
-- [John Philip](https://www.github.com/developerphilo)
-
-## Contributing
-
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-Please adhere to this project's `code of conduct`.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
 ```bash
 
 # install dependencies
@@ -277,8 +261,22 @@ Response
   ],
   "status": 200
 }
-
-
 ```
 
-```
+
+
+## Authors
+
+- [John Philip](https://www.github.com/developerphilo)
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
