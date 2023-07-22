@@ -4,11 +4,11 @@ import { json as bodyParser } from 'body-parser';
 import compression from 'compression'; // compresses requests
 
 import env from './env';
-import helloWorld from './controllers/hello-world';
 import countryController from './controllers/country';
 import countyController from './controllers/counties';
-import postcodeController from './controllers/postal-codes';
+import postcodeController from './controllers/postal_codes';
 import wardsController from './controllers/wards';
+import health_check from './controllers/health_check';
 import { debug } from './utilities/debug';
 
 /**
@@ -29,7 +29,7 @@ app.use(compression());
 app.use(bodyParser());
 
 // Controllers
-app.use('/', helloWorld);
+app.use('/health', health_check);
 app.use('/county', countyController);
 app.use('/country', countryController);
 app.use('/wards', wardsController);
