@@ -272,9 +272,17 @@ Response
 
 ## Contributing
 
-Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+Contributions are always welcome! You can contribute to this project in various ways, including but not limited to:
+
+- Updating to correct information
+- Adding missing information
+- Writing and adding tests
+- Fixing bugs and issues
+- Improving documentation
+- Implementing new features
+
+See `contributing.md` for more details on how to get started with contributing.
 
 Please adhere to this project's `code of conduct`.
 
