@@ -125,7 +125,6 @@ export const counties: County[] = [
             'Garissa',
             'Isiolo',
             'Marsabit',
-            'Tanzania',
             'Somalia',
             'Ethiopia'
         ],
@@ -734,9 +733,7 @@ export const counties: County[] = [
         location: 'International',
         border: [],
         area: '',
-        Population: '',
-        Economy: ['Various', 'Diverse'],
-        Tourism: ['Various Destinations']
+        Population: ''
     },
     {
         code: 49,
@@ -744,11 +741,9 @@ export const counties: County[] = [
         capital: 'Prisons',
         contact: '',
         website: '',
-        location: 'International',
+        location: 'Prisons',
         border: [],
         area: '',
-        Population: '',
-        Economy: ['Various', 'Diverse'],
-        Tourism: ['Various Destinations']
+        Population: ''
     }
 ];

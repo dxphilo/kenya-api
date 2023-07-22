@@ -19,8 +19,6 @@ RESTFul API documenting all the information about country Kenya
 - Node.js
 - Express.js
 
-## Getting Started
-
 ### Home
 
 To access the base URL, [https://kenya-api.onrender.com](https://kenya-api.onrender.com/health)
@@ -35,6 +33,11 @@ List of all the available kenya-api base routes.
 - `/wards`
 - `/postcodes`
 
+
+## Getting Started
+
+Installation 
+
 ```bash
 
 # install dependencies
@@ -47,18 +50,19 @@ $ yarn run dev
 
 ```
 
+
 Your application will be served on port [3000](http://localhost:3000/) by default, you can change that by modifying the .env file.
 
 For a detailed explanation of how things work, check out [Express.js](https://expressjs.com/en/starter/hello-world.html).
 
 
-# REST API Documentation - County Data Endpoint
+### REST API Documentation - County Data Endpoint
 
 This REST API endpoint allows you to retrieve information about counties based on their county code.
 
-## Get County Data
+### Get County Data
 
-### Request
+#### Request
 
 - Method: GET
 - Endpoint: `/county`
@@ -69,7 +73,6 @@ This REST API endpoint allows you to retrieve information about counties based o
 
 - Status Code: 200 (OK) - Successful request
 - Status Code: 400 (Bad Request) - County not found or invalid `county_code`
-- Status Code: 201 (Created) - Request without `county_code`, returns all counties
 
 #### Successful Response
 
@@ -90,6 +93,8 @@ This REST API endpoint allows you to retrieve information about counties based o
   "status": 200
 }
 ```
+####  Not found error response
+
 
 ```json
 {
@@ -99,14 +104,13 @@ This REST API endpoint allows you to retrieve information about counties based o
 
 ```
 
-#### Examples
-Request
+#### Request
 
 ```bash
 GET /county?county_code=1
 
 ```
-Response
+####  Response
 
 ```json
 {
@@ -126,11 +130,13 @@ Response
 }
 
 ```
+####  Request
 
 ```bash
 GET /county?county_code=99
 
 ```
+####  Respoonse
 
 ```json
 {
@@ -139,13 +145,13 @@ GET /county?county_code=99
 }
 ```
 
-Request
+####  Request
 
 ```bash
 GET /county
 ```
 
-Response
+####  Response
 
 ```json
 {
@@ -169,33 +175,32 @@ Response
 
 ```
 
-# REST API Documentation - Wards Data Endpoint
+###  REST API Documentation - Wards Data Endpoint
 
 This REST API endpoint allows you to retrieve information about wards based on their ward code.
 
-## Get Wards Data
+### Get Wards Data
 
-### Request
+#### Request
 
 - Method: GET
 - Endpoint: `/wards`
 - Parameters:
   - `ward_code`: The unique alphanumeric code of the ward (required)
 
-### Response
+#### Response
 
 - Status Code: 200 (OK) - Successful request
 - Status Code: 400 (Bad Request) - Ward not found or invalid `ward_code`
-- Status Code: 201 (Created) - Request without `ward_code`, returns all wards
+
 
 ### Examples
 
 #### Request
 
-GET /wards?ward_code=40101
-
 ```bash
-
+GET /wards?ward_code=40101
+```
 #### Successful Response
 
 ```json
@@ -208,7 +213,7 @@ GET /wards?ward_code=40101
 }
 ```
 
-Error Response
+#### Error Response
 
 ```json
 {
@@ -218,14 +223,14 @@ Error Response
 
 ```
 
-Request
+#### Request
 
 ```bash
 GET /wards?ward_code=99999
 
 ```
 
-Error Response
+####  Error Response
 
 ```json
 {
@@ -233,14 +238,14 @@ Error Response
   "status": 400
 }
 ```
-Request
+#### Request
 
 ```bash
 GET /wards
 
 ```
 
-Response 
+#### Response 
 
 
 ```json
@@ -264,12 +269,6 @@ Response
 }
 ```
 
-
-
-## Authors
-
-- [John Philip](https://www.github.com/dxphilo)
-
 ## Contributing
 
 
@@ -285,6 +284,12 @@ Contributions are always welcome! You can contribute to this project in various 
 See `contributing.md` for more details on how to get started with contributing.
 
 Please adhere to this project's `code of conduct`.
+
+
+####  Authors
+
+- [John Philip](https://www.github.com/dxphilo)
+
 
 ## License
 
