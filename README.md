@@ -31,7 +31,7 @@ List of all the available kenya-api base routes.
 - `/country`
 - `/county`
 - `/wards`
-- `/postcodes`
+- `/postal_stations`
 
 
 ## Getting Started
@@ -267,6 +267,115 @@ GET /wards
   ],
   "status": 200
 }
+```
+
+# Postal Stations API Documentation
+
+This API endpoint allows you to retrieve information about postal stations based on their postal code.
+
+## Get Postal Station Data
+
+### Request
+
+- Method: GET
+- Endpoint: `/postal_stations`
+- Parameters:
+  - `post_code`: The unique numerical postal code of the station (required)
+
+### Response
+
+- Status Code: 200 (OK) - Successful request
+- Status Code: 400 (Bad Request) - Postal station not found or invalid `post_code`
+- Status Code: 200 (OK) - Request without `post_code`, returns all postal stations
+
+#### Successful Response
+
+```json
+{
+  "post": {
+    "code": 12345,
+    "name": "Sample Postal Station",
+    "location": "Sample Location",
+    "district": "Sample District"
+  },
+  "status": 200
+}
+```
+
+#### Error Response
+
+
+```json
+{
+  "error": "Post station with the code {postal_code} not found",
+  "status": 400
+}
+
+```
+### Examples
+#### Request
+
+```bash
+
+GET /postal_stations?post_code=12345
+```
+### Response
+
+```json
+
+{
+  "post": {
+    "code": 12345,
+    "name": "Sample Postal Station",
+    "location": "Sample Location",
+    "district": "Sample District"
+  },
+  "status": 200
+}
+```
+#### Request
+
+```bash
+GET /postal_stations?post_code=99999
+```
+#### Response
+
+```json
+
+{
+  "error": "Post station with the code 99999 not found",
+  "status": 400
+}
+
+```
+#### Request
+
+```bash
+GET /postal_stations
+```
+#### Response
+
+```json
+
+{
+  "postal_stations": [
+    {
+      "code": 12345,
+      "name": "Sample Postal Station 1",
+      "location": "Sample Location 1",
+      "district": "Sample District 1"
+    },
+    {
+      "code": 67890,
+      "name": "Sample Postal Station 2",
+      "location": "Sample Location 2",
+      "district": "Sample District 2"
+    },
+    // Additional postal stations...
+  ],
+  "status": 200
+}
+
 ```
 
 ## Contributing

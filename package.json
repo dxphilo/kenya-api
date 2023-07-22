@@ -8,7 +8,8 @@
         "build": "yarn tsc",
         "start": "yarn tsc && yarn node ./dist/server.js",
         "dev": "yarn run build && yarn run concurrently \"yarn run build -w\" \"yarn nodemon\"",
-        "lint": "yarn eslint '*/**/*.ts' -c .eslintrc.js --ignore-path .eslintignore"
+        "lint": "yarn eslint '*/**/*.ts' -c .eslintrc.js --ignore-path .eslintignore",
+        "test": "TEST_MODE=true mocha -r ts-node/register -r tsconfig-paths/register 'tests/api_tests/*.test.ts' --files --timeout 60000"
     },
     "keywords": [
         "kenya-api"
@@ -20,13 +21,19 @@
         "@types/compression": "^1.7.2",
         "@types/cors": "^2.8.12",
         "@types/express": "^4.17.14",
+        "@types/mocha": "^10.0.1",
+        "@types/supertest": "^2.0.12",
         "@typescript-eslint/eslint-plugin": "^5.37.0",
         "@typescript-eslint/parser": "^5.37.0",
         "concurrently": "^7.4.0",
         "eslint": "^8.23.1",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-prettier": "^4.2.1",
+        "mocha": "^10.2.0",
         "prettier": "^2.7.1",
+        "supertest": "^6.3.3",
+        "ts-node": "^10.9.1",
+        "tsconfig-paths": "^4.2.0",
         "typescript": "^4.8.3"
     },
     "dependencies": {
@@ -38,6 +45,6 @@
         "nodemon": "^2.0.20"
     },
     "engines": {
-        "node": ">=14.5.0"
+        "node": ">=16.9.0"
     }
 }

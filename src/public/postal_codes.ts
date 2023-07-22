@@ -1,10 +1,10 @@
-type postalCode = {
+export type PostalCode = {
     code: number;
     name: string;
     capital: string;
 };
 
-export const postal_codes: postalCode[] = [
+export const postal_stations: PostalCode[] = [
     {
         code: 1,
         name: 'Mombasa',
