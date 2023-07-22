@@ -23,7 +23,7 @@ RESTFul API documenting all the information about country Kenya
 
 ### Home
 
-To access the base URL, [Visit api_health](https://kenya-api.onrender.com/health)
+To access the base URL, [https://kenya-api.onrender.com](https://kenya-api.onrender.com/health)
 
 ### API Routes
 
