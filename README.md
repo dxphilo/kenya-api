@@ -268,7 +268,7 @@ Response
 
 ## Authors
 
-- [John Philip](https://www.github.com/developerphilo)
+- [John Philip](https://www.github.com/dxphilo)
 
 ## Contributing
 
