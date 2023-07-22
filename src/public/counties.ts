@@ -125,7 +125,6 @@ export const counties: County[] = [
             'Garissa',
             'Isiolo',
             'Marsabit',
-            'Tanzania',
             'Somalia',
             'Ethiopia'
         ],
