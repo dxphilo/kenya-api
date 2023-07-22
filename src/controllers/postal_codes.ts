@@ -3,8 +3,8 @@ import * as postalCode from '../public/postal_codes';
 
 const router = Router();
 
-async function postal_data(req: Request, res: Response) {
-    await res.status(201).json({ postalCode, status: 201 });
+function postal_data(req: Request, res: Response) {
+    return res.status(200).json({ postalCode, status: 200 });
 }
 
 // Routes
