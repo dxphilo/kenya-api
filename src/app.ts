@@ -33,6 +33,6 @@ app.use('/health', health_check);
 app.use('/county', countyController);
 app.use('/country', countryController);
 app.use('/wards', wardsController);
-app.use('/postcodes', postcodeController);
+app.use('/postal_stations', postcodeController);
 
 export default app;
