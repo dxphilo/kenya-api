@@ -16,11 +16,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install Dependencies
-        run: yarn install
-      - name: Build and Lint
+      - name: Install Dependencies and Lint
         run: |
-          yarn run build
+          yarn install
           yarn run lint
+        env:
+          CI: true
+      - name: Build
+        run: yarn run build
         env:
           CI: true
