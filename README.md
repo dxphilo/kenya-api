@@ -10,7 +10,7 @@ RESTFul API documenting all the information about country Kenya
 
 ## Features
 
-- Get general information about Kenya, its people, government, institutions, health, culture, energy, finance, infrastructure, geographical sites, etc.
+- To be added: Get general information about Kenya,its people, government, institutions, health, culture, energy, finance, infrastructure, geographical sites, etc.
 
 - Get information about the 47 counties, including population, industries, area, tribes, postal codes, etc.
 
