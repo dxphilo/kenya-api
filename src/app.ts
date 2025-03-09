@@ -27,8 +27,8 @@ app.use(bodyParser());
 
 // Controllers
 router.use('/health', health_check);
-router.use('/info', countyController);
-router.use('/country', countryController);
+router.use('/county', countyController);
+router.use('/info', countryController);
 router.use('/wards', wardsController);
 router.use('/postal_stations', postcodeController);
 router.use('/towns', townsController);
