@@ -1,9 +1,9 @@
-import { Request, Response, Router } from 'express';
+import { NextFunction, Request, Response, Router } from 'express';
 import { postal_stations, PostalCode } from '../public/postal_codes';
 
 const router = Router();
 
-function postal_data(req: Request, res: Response) {
+async function postal_data(req: Request,res: Response, next: NextFunction):Promise<any> {
     const postal_code: number = parseInt(req.query.post_code as string, 10);
 
     if (!isNaN(postal_code)) {

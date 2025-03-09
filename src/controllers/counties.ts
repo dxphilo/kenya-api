@@ -1,9 +1,10 @@
-import { Request, Response, Router } from 'express';
+import { NextFunction, Request, Response, Router } from 'express';
 import { counties, County } from '../public/counties';
 
 const router = Router();
 
-function county_data(req: Request, res: Response) {
+async function county_data(req: Request, res: Response,next:NextFunction):Promise<any> {
+try {
     const county_code: number = parseInt(req.query.county_code as string, 10);
 
     if (isNaN(county_code)) {
@@ -24,6 +25,9 @@ function county_data(req: Request, res: Response) {
         error: `County with the code ${county_code} not found`,
         status: 400
     });
+} catch (error) {
+    next(error);
+}
 }
 
 // Routes

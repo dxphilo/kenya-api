@@ -1,9 +1,10 @@
-import { Request, Response, Router } from 'express';
+import { NextFunction, Request, Response, Router } from 'express';
 import { publicUniversities, University } from '../public/universities';
 
 const router = Router();
 
-function universities_data(req: Request, res: Response) {
+async function universities_data(req: Request, res: Response, next:NextFunction):Promise<any>  {
+try {
     const name: string = req.query.name as string;
 
     if (name) {
@@ -28,6 +29,10 @@ function universities_data(req: Request, res: Response) {
         count: publicUniversities.length,
         status: 200
     });
+    
+} catch (error) {
+    next(error);
+}
 }
 
 // Routes

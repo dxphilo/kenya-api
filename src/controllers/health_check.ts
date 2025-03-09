@@ -1,12 +1,16 @@
-import { Request, Response, Router } from 'express';
+import { NextFunction, Request, Response, Router } from 'express';
 
 const router = Router();
 
-function health_check(req: Request, res: Response) {
+async function health_check(req: Request, res: Response,next:NextFunction):Promise<any>  {
+try {
     return res.json({
         status: 'ok 👍 ',
         message: 'Kasongo Must Go!'
     });
+} catch (error) {
+    next(error);
+}
 }
 
 // Routes

@@ -1,9 +1,10 @@
-import { Request, Response, Router } from 'express';
+import { NextFunction, Request, Response, Router } from 'express';
 import { tribes, Tribe } from '../public/tribes';
 
 const router = Router();
 
-function tribes_data(req: Request, res: Response) {
+async function tribes_data(req: Request, res: Response,next:NextFunction):Promise<any>  {
+try {
     const tribe: string = req.query.name as string;
 
     if (tribe) {
@@ -23,6 +24,9 @@ function tribes_data(req: Request, res: Response) {
     return res
         .status(200)
         .json({ data: tribes, count: tribes.length, status: 200 });
+} catch (error) {
+    next(error);
+}
 }
 
 // Routes

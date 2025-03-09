@@ -3,7 +3,7 @@ import { wards, Ward } from '../public/wards';
 
 const router = Router();
 
-async function wards_data(req: Request, res: Response) {
+async function wards_data(req: Request, res: Response):Promise<any>  {
     const ward_code: string = req.query.ward_code as string;
     if (ward_code) {
         const found_ward: Ward | undefined = wards.find(
