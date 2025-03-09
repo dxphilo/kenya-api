@@ -21,7 +21,11 @@ RESTFul API documenting all the information about country Kenya
 
 ### Home
 
-To access the base URL, [https://kenya-api.onrender.com](https://kenya-api.onrender.com/health)
+To access the base URL, [https://kenya-api.onrender.com/api/v1/](https://kenya-api.onrender.com/api/v1/)
+
+To access health endpoints, [https://kenya-api.onrender.com/api/v1/health](https://kenya-api.onrender.com/api/v1/health)
+
+
 
 ### API Routes
 
@@ -32,6 +36,9 @@ List of all the available kenya-api base routes.
 - `/county`
 - `/wards`
 - `/postal_stations`
+- `/universities`
+- `/tribes`
+- `/hospitals`
 
 
 ## Getting Started
