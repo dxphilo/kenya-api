@@ -1,14 +1,10 @@
-import { NextFunction, Request, Response, Router } from 'express';
+import { Request, Response, Router } from 'express';
 import * as countryInfo from '../public/country.json';
 
 const router = Router();
 
-async function country_data(req: Request, res: Response,next:NextFunction):Promise<any>  {
-try {
-    return res.status(201).json({ countryInfo, status: 201 });
-} catch (error) {
-    next(error);
-}
+const country_data = (req: Request, res: Response): void => {
+    res.status(200).json({ countryInfo, status: 200 });
 }
 
 // Routes

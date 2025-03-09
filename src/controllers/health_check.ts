@@ -1,19 +1,18 @@
-import { NextFunction, Request, Response, Router } from 'express';
+import { Request, Response, Router } from "express";
 
 const router = Router();
 
-async function health_check(req: Request, res: Response,next:NextFunction):Promise<any>  {
-try {
-    return res.json({
-        status: 'ok 👍 ',
-        message: 'Kasongo Must Go!'
-    });
-} catch (error) {
-    next(error);
-}
-}
+const health_check = (req: Request, res: Response): void => {
+  res.json({
+    Status: "OK 👍",
+    Name: "Kenya API",
+    Message: "Kasongo Must Go!",
+    Version: "/api/v1/",
+  });
+  return;
+};
 
 // Routes
-router.get('/', health_check);
+router.get("/", health_check);
 
 export default router;

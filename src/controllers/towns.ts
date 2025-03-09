@@ -1,15 +1,14 @@
-import { Request, Response, Router } from 'express';
-import { towns } from '../public/towns';
+import { Request, Response, Router } from "express";
+import { towns } from "../public/towns";
 
 const router = Router();
 
-async function towns_data(req: Request, res: Response):Promise<any>  {
-    return res
-        .status(200)
-        .json({ towns: towns, count: towns.length, status: 200 });
-}
+const towns_data = (req: Request, res: Response): void => {
+  res.status(200).json({ towns: towns, count: towns.length, status: 200 });
+  return;
+};
 
 // Routes
-router.get('/', towns_data);
+router.get("/", towns_data);
 
 export default router;

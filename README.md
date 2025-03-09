@@ -32,7 +32,7 @@ To access health endpoint, [https://kenya-api.onrender.com/api/v1/health](https:
 List of all the available kenya-api base routes.
 
 - `/health`
-- `/country`
+- `/info` # info about country kenya!
 - `/county`
 - `/wards`
 - `/postal_stations`
