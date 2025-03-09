@@ -5,7 +5,7 @@ const router = Router();
 function health_check(req: Request, res: Response) {
     return res.json({
         status: 'ok 👍 ',
-        message: 'Kasongo Must Go!',
+        message: 'Kasongo Must Go!'
     });
 }
 

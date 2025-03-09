@@ -1,5 +1,5 @@
 import { Request, Response, Router } from 'express';
-import { publicHospitals, PublicHospital} from '../public/hospitals';
+import { publicHospitals, PublicHospital } from '../public/hospitals';
 
 const router = Router();
 
@@ -20,9 +20,11 @@ function hospitals_data(req: Request, res: Response) {
         });
     }
 
-    return res
-        .status(200)
-        .json({ data: publicHospitals, count: publicHospitals.length, status: 200 });
+    return res.status(200).json({
+        data: publicHospitals,
+        count: publicHospitals.length,
+        status: 200
+    });
 }
 
 // Routes

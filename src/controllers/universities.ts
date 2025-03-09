@@ -8,7 +8,9 @@ function universities_data(req: Request, res: Response) {
 
     if (name) {
         const found_university: University | undefined =
-            publicUniversities.find((u) => u.name.toLowerCase() === name.toLowerCase());
+            publicUniversities.find(
+                (u) => u.name.toLowerCase() === name.toLowerCase()
+            );
 
         if (found_university) {
             return res
