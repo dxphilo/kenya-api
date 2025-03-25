@@ -24,7 +24,7 @@
         "@types/express": "^5.0.1",
         "@types/supertest": "^6.0.2",
         "concurrently": "^9.1.2",
-        "eslint": "^9.22.0",
+        "eslint": "^9.23.0",
         "supertest": "^7.1.0",
         "ts-node": "^10.9.1",
         "tsconfig-paths": "^4.2.0",
