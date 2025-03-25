@@ -22,7 +22,7 @@
         "@types/compression": "^1.7.2",
         "@types/cors": "^2.8.14",
         "@types/express": "^5.0.1",
-        "@types/supertest": "^6.0.2",
+        "@types/supertest": "^6.0.3",
         "concurrently": "^9.1.2",
         "eslint": "^9.23.0",
         "supertest": "^7.1.0",
