@@ -1,4 +1,4 @@
-# Security Policy - Project Walrus
+# Security Policy
 
 ## Reporting a Vulnerability
 
@@ -22,4 +22,4 @@ We will acknowledge your report as soon as possible and work closely with you to
 
 We request that you follow responsible disclosure practices and refrain from publicly disclosing the vulnerability until we have had sufficient time to address it. This ensures that our users are protected from potential exploits.
 
-Thank you for your support in making the Walrus project more secure. Your efforts help us improve the safety and reliability of our software for everyone.
+Thank you for your support in making this project more secure. Your efforts help us improve the safety and reliability of our software for everyone.
