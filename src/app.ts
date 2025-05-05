@@ -43,8 +43,9 @@ app.use("/api/v1", router);
 
 // Define the health check URL (using the deployed URL from README)
 const healthCheckUrl =
-  process.env.HEALTH_CHECK_URL ||
-  "https://kenya-api.onrender.com/api/v1/health";
+  process.env.NODE_ENV === "production"
+    ? "https://kenya-api.onrender.com/api/v1/health"
+    : "http://localhost:3000/api/v1/health";
 // Alternative for local check:
 // const port = process.env.PORT || 3000;
 // const healthCheckUrl = `http://localhost:${port}/api/v1/health`;
