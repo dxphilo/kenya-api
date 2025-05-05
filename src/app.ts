@@ -43,15 +43,16 @@ app.use("/api/v1", router);
 
 // Define the health check URL (using the deployed URL from README)
 const healthCheckUrl =
-  process.env.NODE_ENV === "production"
-    ? "https://kenya-api.onrender.com/api/v1/health"
-    : "http://localhost:3000/api/v1/health";
+  process.env.HEALTH_CHECK_URL ||
+  "https://kenya-api.onrender.com/api/v1/health";
 // Alternative for local check:
 // const port = process.env.PORT || 3000;
 // const healthCheckUrl = `http://localhost:${port}/api/v1/health`;
 
-// Schedule the task to run every 4 minutes
-cron.schedule("*/4 * * * *", async () => {
+/**
+ * Pings the health check endpoint and logs the result.
+ */
+export async function pingHealthEndpoint() {
   console.log(`[${new Date().toISOString()}] Running health check ping...`);
   try {
     const response = await axios.get(healthCheckUrl);
@@ -86,6 +87,11 @@ cron.schedule("*/4 * * * *", async () => {
       );
     }
   }
+}
+
+// Schedule the task to run every 4 minutes
+cron.schedule("*/4 * * * *", async () => {
+  await pingHealthEndpoint();
 });
 
 export default app;
