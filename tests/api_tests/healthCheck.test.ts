@@ -97,19 +97,27 @@ describe("Health Check Cron Job", () => {
     const expectedUrl =
       process.env.HEALTH_CHECK_URL ||
       "https://kenya-api.onrender.com/api/v1/health";
-    const mockError = "just a string error"; // Not an instance of Error
-    axiosGetStub.rejects(mockError);
+    const mockErrorValue = "just a string error"; // The raw value being rejected
+    axiosGetStub.rejects(mockErrorValue);
 
     await pingHealthEndpoint();
 
     expect(axiosGetStub.calledOnceWith(expectedUrl)).to.be.true;
     expect(consoleLogSpy.calledWithMatch("Running health check ping...")).to.be
       .true;
+
+    // Expect the 'non-Axios error' log because the string rejection gets wrapped in an Error
     expect(
       consoleErrorSpy.calledWithMatch(
-        "Health check ping failed with unknown error:",
-        "just a string error"
+        "Health check ping failed with non-Axios error:"
       )
     ).to.be.true;
+
+    // Ensure the 'unknown error' block was NOT called
+    expect(
+      consoleErrorSpy.calledWithMatch(
+        "Health check ping failed with unknown error:"
+      )
+    ).to.be.false;
   });
 });
