@@ -50,7 +50,6 @@ export async function pingHealthEndpoint() {
     }
   }
 }
-
 const health_check = (req: Request, res: Response): void => {
   res.json({
     Status: "OK 👍",
