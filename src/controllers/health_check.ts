@@ -5,7 +5,7 @@ import axios from "axios";
 const router = Router();
 
 // Define the health check URL (using the deployed URL from README)
-const healthCheckUrl =
+export const healthCheckUrl =
   process.env.NODE_ENV === "production"
     ? "https://kenya-api.onrender.com/api/v1/health"
     : "http://localhost:3000/api/v1/health";
