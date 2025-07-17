@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import sinon from "sinon";
 import axios, { AxiosError } from "axios";
-import { pingHealthEndpoint } from "../../src/app"; // Adjust path as needed
+import { pingHealthEndpoint } from "../../src/controllers/health_check";
 
 // Define a type for the mocked Axios error to avoid `any`
 interface MockAxiosError extends Error {
