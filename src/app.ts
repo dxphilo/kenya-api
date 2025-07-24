@@ -40,9 +40,12 @@ router.use("/hospitals", hospitalsController);
 // Mount the router under /api/v1/
 app.use("/api/v1", router);
 
-// Schedule the task to run every 4 minutes
-cron.schedule("*/4 * * * *", async () => {
-  await pingHealthEndpoint();
-});
+// Skip cron job in CI to prevent blocking workflows; otherwise,
+// schedule task to run every 4 minutes
+if (process.env.CI !== "true") {
+  cron.schedule("*/4 * * * *", async () => {
+    await pingHealthEndpoint();
+  });
+}
 
 export default app;

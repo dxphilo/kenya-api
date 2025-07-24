@@ -5,7 +5,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      CI: true # Set CI=true for the entire build job
     strategy:
       matrix:
         node-version: [20.x]
@@ -21,9 +22,5 @@ jobs:
           yarn install
           yarn run lint
           yarn run test
-        env:
-          CI: true
       - name: Build
         run: yarn run build
-        env:
-          CI: true
