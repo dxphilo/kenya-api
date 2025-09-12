@@ -30,7 +30,7 @@
         "concurrently": "^9.1.2",
         "eslint": "^9.25.1",
         "sinon": "^21.0.0",
-        "supertest": "^7.1.0",
+        "supertest": "^7.1.4",
         "ts-node": "^10.9.1",
         "tsconfig-paths": "^4.2.0",
         "typescript": "^5.8.3",
