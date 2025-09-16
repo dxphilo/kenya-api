@@ -15,6 +15,8 @@ interface Bank {
     subBranches: number;
     xpressUnits: number;
     type: string;
+    ussd: string;
+    payBill: number;
 }
 
 interface MortgageFinanceInstitution {
@@ -63,7 +65,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*224#",
+        payBill: 111777
     },
     {
         id: 2,
@@ -81,7 +85,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*862#",
+        payBill: 862862
     },
     {
         id: 3,
@@ -99,7 +105,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*987#",
+        payBill: 972900
     },
     {
         id: 4,
@@ -117,7 +125,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     },
     {
         id: 5,
@@ -135,7 +145,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     },
     {
         id: 6,
@@ -153,7 +165,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     },
     {
         id: 7,
@@ -162,7 +176,7 @@ export const commercialBanks: Bank[] = [
         telephone: "+254-20- 2754000/ 2711221",
         fax: "+254-20-2714810/1",
         email: "Kenya.citiservice@citi.com",
-        website: "https://www.citigroup.com/citi/about/countries-andjurisdictions/kenya.html",
+        website: "https://www.citigroup.com/global/about-us/global-presence/kenya",
         physicalAddress: "Citibank House, Upper Hill Road, Upper Hill, Nairobi.",
         dateLicensed: "1st July 1974",
         peerGroup: "Medium",
@@ -171,7 +185,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     },
     {
         id: 8,
@@ -189,7 +205,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*262#",
+        payBill: 508400
     },
     {
         id: 9,
@@ -207,7 +225,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*667#",
+        payBill: 400200
     },
     {
         id: 10,
@@ -225,7 +245,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*699#",
+        payBill: 972700
     },
     {
         id: 11,
@@ -243,7 +265,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     },
     {
         id: 12,
@@ -261,7 +285,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*385#",
+        payBill: 516600
     },
     {
         id: 13,
@@ -279,7 +305,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*278#",
+        payBill: 342342
     },
     {
         id: 14,
@@ -297,7 +325,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*335#",
+        payBill: 700201
     },
     {
         id: 15,
@@ -315,7 +345,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 13,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*247#",
+        payBill: 247247
     },
     {
         id: 16,
@@ -333,7 +365,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*325#",
+        payBill: 222111
     },
     {
         id: 17,
@@ -351,7 +385,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     },
     {
         id: 18,
@@ -369,7 +405,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 910200
     },
     {
         id: 19,
@@ -387,7 +425,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*356#",
+        payBill: 344501
     },
     {
         id: 20,
@@ -405,7 +445,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*399#",
+        payBill: 985050
     },
     {
         id: 21,
@@ -423,7 +465,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 570425
     },
     {
         id: 22,
@@ -441,7 +485,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*458#",
+        payBill: 542542
     },
     {
         id: 23,
@@ -459,7 +505,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*522#",
+        payBill: 522522
     },
     {
         id: 24,
@@ -477,7 +525,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*334#",
+        payBill: 0
     },
     {
         id: 25,
@@ -495,7 +545,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 961610
     },
     {
         id: 26,
@@ -513,7 +565,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     },
     {
         id: 27,
@@ -531,7 +585,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     },
     {
         id: 28,
@@ -549,7 +605,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*625#",
+        payBill: 547700
     },
     {
         id: 29,
@@ -567,7 +625,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*654#",
+        payBill: 880100
     },
     {
         id: 30,
@@ -585,7 +645,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 907950
     },
     {
         id: 31,
@@ -603,7 +665,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     },
     {
         id: 32,
@@ -621,7 +685,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 8,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*275#",
+        payBill: 552800
     },
     {
         id: 33,
@@ -639,7 +705,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*527#",
+        payBill: 111999
     },
     {
         id: 34,
@@ -657,7 +725,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*275#",
+        payBill: 100100
     },
     {
         id: 35,
@@ -675,7 +745,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*208#",
+        payBill: 600100
     },
     {
         id: 36,
@@ -693,7 +765,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 1,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*722#",
+        payBill: 329329
     },
     {
         id: 37,
@@ -711,7 +785,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "*368#",
+        payBill: 559900
     },
     {
         id: 38,
@@ -729,7 +805,9 @@ export const commercialBanks: Bank[] = [
         salesCentres: 0,
         subBranches: 0,
         xpressUnits: 0,
-        type: "commercial"
+        type: "commercial",
+        ussd: "",
+        payBill: 0
     }
 ];
 

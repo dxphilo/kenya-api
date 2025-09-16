@@ -380,6 +380,182 @@ GET /postal_stations
 }
 ```
 
+---
+
+# Banks API Documentation
+
+This API endpoint allows you to retrieve information about banks in Kenya. You can query by bank type, bank name, USSD code, or Paybill number.
+
+---
+
+⚠️ **Caution**:
+The information provided by this API (including **Paybill numbers**, **USSD codes**, **Telephone/Fax numbers**, **Email addresses**, and **Website URLs**) is for **reference only**.
+Before engaging in **any financial transactions, communications, or interactions with a bank**, you must independently verify these details through **official and trusted sources** (such as the Central Bank’s registry, the bank’s official website, or verified customer support channels).
+
+- Do **not** send money, share personal details, or initiate transactions based solely on this API’s data.
+- Be aware that malicious actors can impersonate banks using fake numbers, emails, or domains.
+- Always confirm legitimacy before engage in making payments, signing agreements, or providing sensitive information.
+
+This API is provided strictly for **informational and educational purposes**. The maintainers of this API **assume no responsibility** for financial loss, fraud, or damages resulting from misuse of the data.
+
+---
+
+## Get Bank Data
+
+### Request
+
+- **Method:** `GET`
+- **Endpoint:** `/banks`
+- **Query Parameters:**
+
+  - `bank_type`: Filter banks by type (optional). Valid values:
+
+    - `commercial`
+    - `mortgage-finance-institution`
+    - `non-operating-holding-company`
+
+  - `bank_name`: Filter by partial/full bank name (optional, case-insensitive).
+  - `ussd`: Filter by USSD code (optional, only applies to commercial banks).
+  - `paybill`: Filter by Paybill number (optional, only applies to banks that have one).
+
+---
+
+## Response
+
+- **200 (OK):** Successful request, returns matching bank(s).
+- **400 (Bad Request):** Invalid bank type or malformed query.
+- **404 (Not Found):** No banks match the provided query.
+- **200 (OK):** Request without filters returns all banks.
+
+---
+
+### Examples
+
+#### Request
+
+```bash
+
+GET /banks?bank_name=commercial&ussd=247
+```
+
+### Successful Response (Filtered by Bank Name)
+
+```json
+{
+  "data": [
+    {
+      "id": 15,
+      "name": "Equity Bank Kenya Limited",
+      "postalAddress": "P. O. Box 75104-00200, Nairobi",
+      "telephone": "+254-20- +254 20 2262000/2262956 /2262828, 0763026000, 07633026956, 0763026828",
+      "fax": "+254-020-2737276",
+      "email": "info@equitybank.co.ke",
+      "website": "www.equitybankgroup.com",
+      "physicalAddress": "Equity Centre, 9th Floor, Hospital Road, Upper Hill, Nairobi.",
+      "dateLicensed": "28th December 2004",
+      "peerGroup": "Large",
+      "branches": 178,
+      "agencies": 0,
+      "salesCentres": 0,
+      "subBranches": 13,
+      "xpressUnits": 0,
+      "type": "commercial",
+      "ussd": "*247#",
+      "payBill": 247247
+    },
+    {
+      "id": 2,
+      "name": "Equity Group Holdings Limited",
+      "licensedSubsidiary": "Equity Bank Kenya Ltd",
+      "postalAddress": "P.O. Box 75104 – 00200, Nairobi",
+      "telephone": "+254 763 3026000 Contact Centre: +254 763 063 000",
+      "email": "info@equitygroupholdings.com",
+      "website": "www.equitygroupholdings.com",
+      "physicalAddress": "Equity Centre, 9th Floor, Hospital Road, Upper Hill, Nairobi",
+      "dateAuthorized": "31st December 2014",
+      "type": "non-operating-holding-company"
+    }
+  ],
+  "count": 2,
+  "status": 200
+}
+```
+
+---
+
+### Error Response (Invalid Bank Type)
+
+```json
+{
+  "error": "Invalid bank type",
+  "status": 400
+}
+```
+
+---
+
+### Error Response (No Matching Results)
+
+```json
+{
+  "error": "No bank(s) found matching the provided query",
+  "query": {
+    "bank_name": "nonexistent-bank"
+  },
+  "status": 404
+}
+```
+
+---
+
+### Request Without Filters
+
+```bash
+GET /banks
+```
+
+#### Response
+
+```json
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "ABSA Bank Kenya PLC",
+      "postalAddress": "P. O. Box 30120 – 00100, Nairobi",
+      "telephone": "+254-20-4254000, 3900000",
+      "email": "absa.kenya@absa.africa",
+      "website": "www.absabank.co.ke",
+      "physicalAddress": "Absa Headquarters, Waiyaki Way, Westlands, Nairobi",
+      "dateLicensed": "1916",
+      "peerGroup": "Large",
+      "branches": 85,
+      "type": "commercial",
+      "ussd": "*224#",
+      "payBill": 111777
+    },
+    {
+      "id": 2,
+      "name": "Equity Bank Kenya Limited",
+      "postalAddress": "P. O. Box 75104 – 00200, Nairobi",
+      "telephone": "+254-763-063000",
+      "email": "info@equitybank.co.ke",
+      "website": "www.equitybankgroup.com",
+      "physicalAddress": "Equity Centre, Upper Hill, Nairobi",
+      "dateLicensed": "1984",
+      "peerGroup": "Large",
+      "branches": 190,
+      "type": "commercial",
+      "ussd": "*247#",
+      "payBill": 247247
+    }
+    // ... additional banks
+  ],
+  "count": 42,
+  "status": 200
+}
+```
+
 ## Contributing
 
 Contributions are always welcome! You can contribute to this project in various ways, including but not limited to:
