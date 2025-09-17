@@ -14,6 +14,7 @@ import townsController from "./controllers/towns";
 import universityController from "./controllers/universities";
 import tribesController from "./controllers/tribes";
 import hospitalsController from "./controllers/hospitals";
+import banksController from "./controllers/banks";
 import { loggingMiddleware } from "./middlewares/loggingMiddleware";
 
 const app = express();
@@ -36,6 +37,7 @@ router.use("/towns", townsController);
 router.use("universities", universityController);
 router.use("/tribes", tribesController);
 router.use("/hospitals", hospitalsController);
+router.use("/banks", banksController);
 
 // Mount the router under /api/v1/
 app.use("/api/v1", router);

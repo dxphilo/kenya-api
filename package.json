@@ -9,7 +9,7 @@
         "start": "yarn tsc && yarn node ./dist/server.js",
         "dev": "yarn run build && yarn run concurrently \"yarn run build -w\" \"yarn nodemon\"",
         "lint": "yarn eslint '*/**/*.ts' -c eslint.config.mjs --fix",
-        "test": "TEST_MODE=true mocha -r ts-node/register -r tsconfig-paths/register 'tests/api_tests/*.test.ts' --files --timeout 60000"
+        "test": "cross-env TEST_MODE=true mocha -r ts-node/register -r tsconfig-paths/register 'tests/api_tests/*.test.ts' --files --timeout 60000"
     },
     "keywords": [
         "kenya-api"
@@ -28,6 +28,7 @@
         "@types/supertest": "^6.0.3",
         "chai": "^6.0.1",
         "concurrently": "^9.1.2",
+        "cross-env": "^10.0.0",
         "eslint": "^9.25.1",
         "sinon": "^21.0.0",
         "supertest": "^7.1.4",
