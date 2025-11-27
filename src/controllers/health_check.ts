@@ -4,14 +4,10 @@ import { getCurrentISODate } from "../utilities/util";
 
 const router = Router();
 
-// Define the health check URL (using the deployed URL from README)
 export const healthCheckUrl =
   process.env.NODE_ENV === "production"
     ? "https://kenya-api.onrender.com/api/v1/health"
     : "http://localhost:3000/api/v1/health";
-// Alternative for local check:
-// const port = process.env.PORT || 3000;
-// const healthCheckUrl = `http://localhost:${port}/api/v1/health`;
 
 /**
  * Pings the health check endpoint and logs the result.
@@ -54,8 +50,8 @@ const health_check = (req: Request, res: Response): void => {
   res.json({
     Status: "OK 👍",
     Name: "Kenya API",
-    Message: "Kasongo Must Go!",
     Version: "/api/v1/",
+    Message: "Kasongo Must Go!",
   });
   return;
 };

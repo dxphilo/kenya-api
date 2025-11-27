@@ -1,10 +1,17 @@
 import { Request, Response, Router } from "express";
 import { publicHospitals, PublicHospital } from "../public/hospitals";
+import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 
 const router = Router();
 
 const hospitals_data = (req: Request, res: Response): void => {
-  const hospital: string = req.query.name as string;
+  const hospital_name_query = req.query.name;
+  const hospital: string = hospital_name_query as string;
+
+  if (!hospital_name_query) {
+    res.status(200).json(createSuccessResponse(publicHospitals));
+    return;
+  }
 
   if (hospital) {
     const found_hospital: PublicHospital | undefined = publicHospitals.find(
@@ -12,22 +19,17 @@ const hospitals_data = (req: Request, res: Response): void => {
     );
 
     if (found_hospital) {
-      res.status(200).json({ data: found_hospital, status: 200 });
+      res.status(200).json(createSuccessResponse(found_hospital));
       return;
     }
-    res.status(400).json({
-      error: `Hospital with the name ${hospital} not found!`,
-      status: 400,
-    });
+
+    res
+      .status(400)
+      .json(
+        createErrorResponse(`Hospital with the name ${hospital} not found!`)
+      );
     return;
   }
-
-  res.status(200).json({
-    data: publicHospitals,
-    count: publicHospitals.length,
-    status: 200,
-  });
-  return;
 };
 
 // Routes
