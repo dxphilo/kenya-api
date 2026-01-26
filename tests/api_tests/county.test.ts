@@ -9,13 +9,13 @@ describe('GET => /api/v1/county', () => {
         console.log('Server setup complete for county tests');
     });
 
-    it('Should return 200', async function () {
+    it('Should return 200', async () => {
         await supertest(app)
             .get(`/api/v1/county?county_code=${available_county_code}`)
             .expect(200);
     });
 
-    it('Should return 400', async function () {
+    it('Should return 400', async () => {
         await supertest(app)
             .get(`/api/v1/county?county_code=${none_county}`)
             .expect(400);

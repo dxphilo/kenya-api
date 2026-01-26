@@ -1,5 +1,5 @@
-import { Request, Response, Router } from "express";
-import { publicHospitals, PublicHospital } from "../public/hospitals";
+import { type Request, type Response, Router } from "express";
+import { publicHospitals, type PublicHospital } from "../public/hospitals";
 import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 
 const router = Router();
@@ -26,7 +26,7 @@ const hospitals_data = (req: Request, res: Response): void => {
     res
       .status(400)
       .json(
-        createErrorResponse(`Hospital with the name ${hospital} not found!`)
+        createErrorResponse(`Hospital with the name '${hospital}' not found!`)
       );
     return;
   }

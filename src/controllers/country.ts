@@ -1,4 +1,4 @@
-import { Request, Response, Router } from "express";
+import { type Request, type Response, Router } from "express";
 import * as countryInfo from "../public/country.json";
 import { createSuccessResponse } from "../utilities/error";
 

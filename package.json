@@ -8,7 +8,9 @@
     "build": "yarn tsc",
     "start": "yarn tsc && yarn node ./dist/server.js",
     "dev": "yarn run build && yarn run concurrently \"yarn run build -w\" \"yarn nodemon\"",
-    "lint": "yarn eslint '*/**/*.ts' -c eslint.config.mjs --fix",
+    "lint": "biome lint --write",
+    "format": "biome format --write ./src",
+    "check": "biome check --write ./src",
     "test": "TEST_MODE=true mocha -r ts-node/register -r tsconfig-paths/register 'tests/api_tests/*.test.ts' --files --timeout 60000"
   },
   "keywords": [
@@ -17,7 +19,7 @@
   "author": "John Philip <dxphilo@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.25.0",
+    "@biomejs/biome": "2.3.12",
     "@types/body-parser": "^1.19.5",
     "@types/chai": "^5.2.1",
     "@types/compression": "^1.7.2",
@@ -28,13 +30,11 @@
     "@types/supertest": "^6.0.3",
     "chai": "^5.2.0",
     "concurrently": "^9.1.2",
-    "eslint": "^9.25.1",
     "sinon": "^20.0.0",
     "supertest": "^7.1.0",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.37.0"
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "@types/mocha": "^10.0.10",

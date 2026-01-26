@@ -1,4 +1,4 @@
-import { Request, Response, Router } from "express";
+import { type Request, type Response, Router } from "express";
 import axios from "axios";
 import { getCurrentISODate } from "../utilities/util";
 

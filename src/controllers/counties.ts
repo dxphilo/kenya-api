@@ -1,5 +1,5 @@
-import { Request, Response, Router } from "express";
-import { counties, County } from "../public/counties";
+import { type Request, type Response, Router } from "express";
+import { counties, type County } from "../public/counties";
 import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 
 const router = Router();

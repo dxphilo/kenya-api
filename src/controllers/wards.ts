@@ -1,5 +1,5 @@
-import { Request, Response, Router } from "express";
-import { wards, Ward } from "../public/wards";
+import { type Request, type Response, Router } from "express";
+import { wards, type Ward } from "../public/wards";
 import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 
 const router = Router();

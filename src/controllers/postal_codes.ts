@@ -1,5 +1,5 @@
-import { Request, Response, Router } from "express";
-import { postal_stations, PostalCode } from "../public/postal_codes";
+import { type Request, type Response, Router } from "express";
+import { postal_stations, type PostalCode } from "../public/postal_codes";
 import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 
 const router = Router();
@@ -27,7 +27,7 @@ const postal_data = (req: Request, res: Response): void => {
       .status(400)
       .json(
         createErrorResponse(
-          `Post station with the code ${postal_code} not found`
+          `Post station with the code '${postal_code}' not found`
         )
       );
     return;

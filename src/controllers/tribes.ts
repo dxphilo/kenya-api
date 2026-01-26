@@ -1,5 +1,5 @@
-import { Request, Response, Router } from "express";
-import { tribes, Tribe } from "../public/tribes";
+import { type Request, type Response, Router } from "express";
+import { tribes, type Tribe } from "../public/tribes";
 import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 
 const router = Router();

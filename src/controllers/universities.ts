@@ -1,5 +1,5 @@
-import { Request, Response, Router } from "express";
-import { publicUniversities, University } from "../public/universities";
+import { type Request, type Response, Router } from "express";
+import { publicUniversities, type University } from "../public/universities";
 import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 
 const router = Router();
