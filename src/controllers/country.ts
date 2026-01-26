@@ -5,7 +5,7 @@ import { createSuccessResponse } from "../utilities/error";
 const router = Router();
 
 const country_data = (_req: Request, res: Response): void => {
-  res.status(200).json(createSuccessResponse(countryInfo));
+	res.status(200).json(createSuccessResponse(countryInfo));
 };
 
 // Routes

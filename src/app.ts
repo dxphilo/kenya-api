@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import { json as bodyParser } from "body-parser";
 import compression from "compression"; // compresses requests
 import cron from "node-cron";
 
@@ -16,6 +15,7 @@ import tribesController from "./controllers/tribes";
 import hospitalsController from "./controllers/hospitals";
 import banksController from "./controllers/banks";
 import { loggingMiddleware } from "./middlewares/loggingMiddleware";
+import bodyParser from "body-parser";
 
 const app = express();
 const router = express.Router();
@@ -25,7 +25,7 @@ app.set("port", env.port);
 app.use(loggingMiddleware);
 app.use(cors());
 app.use(compression());
-app.use(bodyParser());
+app.use(bodyParser.json({ type: "application/*+json" }));
 
 // Controllers
 router.use("/health", health_check);
@@ -45,9 +45,9 @@ app.use("/api/v1", router);
 // Skip cron job in CI to prevent blocking workflows; otherwise,
 // schedule task to run every 4 minutes
 if (process.env.CI !== "true") {
-  cron.schedule("*/4 * * * *", async () => {
-    await pingHealthEndpoint();
-  });
+	cron.schedule("*/4 * * * *", async () => {
+		await pingHealthEndpoint();
+	});
 }
 
 export default app;

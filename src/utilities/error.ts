@@ -1,35 +1,35 @@
 export enum StatusEnum {
-  Success = "success",
-  Error = "error",
+	Success = "success",
+	Error = "error",
 }
 
 export interface SuccessResponse<T> {
-  status: StatusEnum.Success;
-  data: T | null;
+	status: StatusEnum.Success;
+	data: T | null;
 }
 
 export interface ErrorResponse {
-  status: StatusEnum.Error;
-  message: string;
-  error: {
-    details: string | undefined;
-  };
+	status: StatusEnum.Error;
+	message: string;
+	error: {
+		details: string | undefined;
+	};
 }
 
 export const createSuccessResponse = <T>(
-  data: T | null = null
+	data: T | null = null,
 ): SuccessResponse<T> => ({
-  status: StatusEnum.Success,
-  data,
+	status: StatusEnum.Success,
+	data,
 });
 
 export const createErrorResponse = (
-  message: string,
-  details?: string
+	message: string,
+	details?: string,
 ): ErrorResponse => ({
-  status: StatusEnum.Error,
-  message,
-  error: {
-    details,
-  },
+	status: StatusEnum.Error,
+	message,
+	error: {
+		details,
+	},
 });

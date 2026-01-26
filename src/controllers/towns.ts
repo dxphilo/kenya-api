@@ -5,8 +5,8 @@ import { createSuccessResponse } from "../utilities/error";
 const router = Router();
 
 const towns_data = (_req: Request, res: Response): void => {
-  res.status(200).json(createSuccessResponse(towns));
-  return;
+	res.status(200).json(createSuccessResponse(towns));
+	return;
 };
 
 // Routes

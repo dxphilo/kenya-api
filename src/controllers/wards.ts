@@ -5,7 +5,7 @@ import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 const router = Router();
 
 const wards_data = (req: Request, res: Response): void => {
-  const ward_code: string = req.query.code as string;
+  const ward_code: string = req.query.ward_code as string;
 
   if (ward_code) {
     const found_ward: Ward | undefined = wards.find(
@@ -19,7 +19,7 @@ const wards_data = (req: Request, res: Response): void => {
 
     res
       .status(400)
-      .json(createErrorResponse(`Ward with the code '${ward_code}' not found`));
+      .json(createErrorResponse(`Ward with the code ${ward_code} not found`));
     return;
   }
 
