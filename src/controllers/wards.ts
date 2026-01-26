@@ -1,27 +1,29 @@
-import { Request, Response, Router } from "express";
-import { wards, Ward } from "../public/wards";
+import { type Request, type Response, Router } from "express";
+import { wards, type Ward } from "../public/wards";
+import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 
 const router = Router();
 
 const wards_data = (req: Request, res: Response): void => {
   const ward_code: string = req.query.ward_code as string;
+
   if (ward_code) {
     const found_ward: Ward | undefined = wards.find(
       (ward) => ward.code === ward_code
     );
 
     if (found_ward) {
-      res.status(200).json({ ward: found_ward, status: 200 });
+      res.status(200).json(createSuccessResponse(found_ward));
       return;
     }
-    res.status(400).json({
-      error: `Ward with the code ${ward_code} not found`,
-      status: 400,
-    });
+
+    res
+      .status(400)
+      .json(createErrorResponse(`Ward with the code ${ward_code} not found`));
     return;
   }
 
-  res.status(201).json({ wards, status: 200 });
+  res.status(201).json(createSuccessResponse(wards));
   return;
 };
 

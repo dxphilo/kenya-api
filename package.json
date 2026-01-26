@@ -1,55 +1,56 @@
 {
-    "name": "kenya-api",
-    "version": "1.0.0",
-    "description": "API documenting information about country Kenya",
-    "repository": "https://github.com/developerphilo/kenya-api.git",
-    "main": "src/server.ts",
-    "scripts": {
-        "build": "yarn tsc",
-        "start": "yarn tsc && yarn node ./dist/server.js",
-        "dev": "yarn run build && yarn run concurrently \"yarn run build -w\" \"yarn nodemon\"",
-        "lint": "yarn eslint '*/**/*.ts' -c eslint.config.mjs --fix",
-        "test": "cross-env TEST_MODE=true mocha -r ts-node/register -r tsconfig-paths/register 'tests/api_tests/*.test.ts' --files --timeout 60000"
-    },
-    "keywords": [
-        "kenya-api"
-    ],
-    "author": "John Philip <developerphilo@gmail.com>",
-    "license": "MIT",
-    "devDependencies": {
-        "@eslint/js": "^9.39.2",
-        "@types/body-parser": "^1.19.5",
-        "@types/chai": "^5.2.1",
-        "@types/compression": "^1.8.1",
-        "@types/cors": "^2.8.14",
-        "@types/express": "^5.0.1",
-        "@types/node-cron": "^3.0.11",
-        "@types/sinon": "^17.0.4",
-        "@types/supertest": "^6.0.3",
-        "chai": "^6.0.1",
-        "concurrently": "^9.1.2",
-        "cross-env": "^10.0.0",
-        "eslint": "^9.25.1",
-        "sinon": "^21.0.0",
-        "supertest": "^7.1.4",
-        "ts-node": "^10.9.1",
-        "tsconfig-paths": "^4.2.0",
-        "typescript": "^5.8.3",
-        "typescript-eslint": "^8.37.0"
-    },
-    "dependencies": {
-        "@types/mocha": "^10.0.10",
-        "axios": "^1.12.0",
-        "body-parser": "^2.2.0",
-        "compression": "^1.8.1",
-        "cors": "^2.8.5",
-        "dotenv": "^17.2.2",
-        "express": "^5.1.0",
-        "mocha": "^11.2.2",
-        "node-cron": "^4.2.1",
-        "nodemon": "^3.1.10"
-    },
-    "engines": {
-        "node": ">=20.0.0"
-    }
+	"name": "kenya-api",
+	"version": "1.0.0",
+	"description": "API documenting information about country Kenya",
+	"repository": "https://github.com/dxphilo/kenya-api.git",
+	"main": "src/server.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "tsx watch src/server.ts",
+		"build": "vite build",
+		"preview": "vite preview",
+		"start": "node dist/server.js",
+		"lint": "biome lint --write",
+		"format": "biome format --write",
+		"check": "biome check --write",
+		"test": "TEST_MODE=true tsx ./node_modules/mocha/bin/mocha.js \"tests/api_tests/**/*.test.ts\" --timeout 60000"
+	},
+	"keywords": [
+		"kenya-api"
+	],
+	"author": "John Philip <dxphilo@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@biomejs/biome": "2.3.13",
+		"@types/body-parser": "^1.19.5",
+		"@types/chai": "^5.2.3",
+		"@types/compression": "^1.8.1",
+		"@types/cors": "^2.8.14",
+		"@types/express": "^5.0.6",
+		"@types/node-cron": "^3.0.11",
+		"@types/sinon": "^21.0.0",
+		"@types/supertest": "^6.0.3",
+		"chai": "^6.2.2",
+		"concurrently": "^9.2.1",
+		"sinon": "^21.0.1",
+		"supertest": "^7.2.2",
+		"tsconfig-paths": "^4.2.0",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"@types/mocha": "^10.0.10",
+		"axios": "^1.13.3",
+		"body-parser": "^2.2.2",
+		"compression": "^1.8.1",
+		"cors": "^2.8.6",
+		"dotenv": "^17.2.3",
+		"express": "^5.2.1",
+		"mocha": "^11.7.5",
+		"node-cron": "^4.2.1"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	}
 }

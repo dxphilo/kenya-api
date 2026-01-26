@@ -2,19 +2,9 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in the Walrus project, we encourage you to report it responsibly. Your cooperation in disclosing vulnerabilities helps us maintain the security and integrity of the project.
+If you discover a security vulnerability in this project, we encourage you to report it responsibly.
 
-To report a vulnerability, please follow these steps:
-
-1. Go to the [Issues](https://github.com/dxphilo/kenya-api/issues) section of the project repository.
-
-2. Click on the "New Issue" button.
-
-3. Select the "Security Vulnerability" issue template, if available.
-
-4. Provide a clear and concise description of the vulnerability in the issue body. Include any supporting materials, like proof-of-concept code or screenshots, to help us understand the impact and severity.
-
-5. Submit the issue.
+Your cooperation in disclosing vulnerabilities helps us maintain the security and integrity of the project.
 
 We will acknowledge your report as soon as possible and work closely with you to validate and understand the vulnerability. Once the vulnerability is confirmed and mitigated, we will release a security update to the supported versions of the project.
 

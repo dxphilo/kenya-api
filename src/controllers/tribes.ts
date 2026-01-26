@@ -1,29 +1,30 @@
-import { Request, Response, Router } from "express";
-import { tribes, Tribe } from "../public/tribes";
+import { type Request, type Response, Router } from "express";
+import { tribes, type Tribe } from "../public/tribes";
+import { createErrorResponse, createSuccessResponse } from "../utilities/error";
 
 const router = Router();
 
 const tribes_data = (req: Request, res: Response): void => {
-  const tribe: string = req.query.name as string;
+	const tribe_name_query = req.query.name;
+	const tribe: string = tribe_name_query as string;
 
-  if (tribe) {
-    const found_tribe: Tribe | undefined = tribes.find(
-      (u) => u.name.toLowerCase() === tribe.toLowerCase()
-    );
+	if (!tribe_name_query) {
+		res.status(200).json(createSuccessResponse(tribes));
+		return;
+	}
 
-    if (found_tribe) {
-      res.status(200).json({ data: found_tribe, status: 200 });
-      return;
-    }
-    res.status(400).json({
-      error: `Tribe with the name ${tribe} not found!`,
-      status: 400,
-    });
-    return;
-  }
+	const found_tribe: Tribe | undefined = tribes.find(
+		(u) => u.name.toLowerCase() === tribe.toLowerCase(),
+	);
 
-  res.status(200).json({ data: tribes, count: tribes.length, status: 200 });
-  return;
+	if (found_tribe) {
+		res.status(200).json(createSuccessResponse(found_tribe));
+		return;
+	}
+	res
+		.status(400)
+		.json(createErrorResponse(`Tribe with the name '${tribe}' not found!`));
+	return;
 };
 
 // Routes
