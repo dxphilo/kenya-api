@@ -13,7 +13,7 @@ const postal_data = (req: Request, res: Response): void => {
     return;
   }
 
-  if (!isNaN(postal_code)) {
+  if (!Number.isNaN(postal_code)) {
     const found_post: PostalCode | undefined = postal_stations.find(
       (post) => post.code === postal_code
     );

@@ -3,7 +3,7 @@ import { debug } from '../utilities/debug';
 
 export function loggingMiddleware(
     req: Request,
-    res: Response,
+    _res: Response,
     next: NextFunction
 ) {
     debug(`${req.method}: ${req.originalUrl}`);

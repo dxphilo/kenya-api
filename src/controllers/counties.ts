@@ -13,7 +13,7 @@ const counties_data = (req: Request, res: Response): void => {
     return;
   }
 
-  if (isNaN(county_code)) {
+  if (Number.isNaN(county_code)) {
     const error_message = "Invalid County code";
     res.status(400).json(createErrorResponse(error_message));
     return;

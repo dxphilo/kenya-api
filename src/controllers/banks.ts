@@ -1,4 +1,4 @@
-import { Request, Response, Router, RequestHandler } from "express";
+import { type Request, type Response, Router, type RequestHandler } from "express";
 import {
     commercialBanks,
     mortgageFinanceInstitutions,
