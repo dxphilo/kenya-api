@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@types/mocha": "^10.0.10",
-    "axios": "^1.13.4",
+    "axios": "^1.13.5",
     "body-parser": "^2.2.2",
     "compression": "^1.8.1",
     "cors": "^2.8.6",
