@@ -41,7 +41,7 @@
     "body-parser": "^2.2.2",
     "compression": "^1.8.1",
     "cors": "^2.8.6",
-    "dotenv": "^17.2.4",
+    "dotenv": "^17.3.0",
     "express": "^5.2.1",
     "mocha": "^11.7.5",
     "node-cron": "^4.2.1"
