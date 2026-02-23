@@ -19,7 +19,7 @@
   "author": "John Philip <dxphilo@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "2.4.3",
+    "@biomejs/biome": "2.4.4",
     "@types/body-parser": "^1.19.5",
     "@types/chai": "^5.2.3",
     "@types/compression": "^1.8.1",
