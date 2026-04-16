@@ -26,7 +26,7 @@
     "@types/cors": "^2.8.14",
     "@types/express": "^5.0.6",
     "@types/node-cron": "^3.0.11",
-    "@types/sinon": "^21.0.0",
+    "@types/sinon": "^21.0.1",
     "@types/supertest": "^7.2.0",
     "chai": "^6.2.2",
     "sinon": "^21.0.3",
