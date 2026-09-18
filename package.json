@@ -44,7 +44,7 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mocha": "^11.7.5",
-    "node-cron": "^4.2.1"
+    "node-cron": "^4.6.0"
   },
   "engines": {
     "node": ">=20.0.0"
